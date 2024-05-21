@@ -47,7 +47,7 @@ func sliding_window_approach(myArray []int, k int) {
 			// calculate the average
 			myAverageArray = append(myAverageArray, float32(windowSum)/float32(k))
 
-			// remove the element going out of the window
+			// subtracting the element at windowStart, our windowSum would not accumulate values of all elements seen so far
 			windowSum -= myArray[windowStart]
 
 			// slide the window ahead
