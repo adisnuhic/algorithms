@@ -36,7 +36,6 @@ func naiveApproach(myArray []int, k int) {
 
 // This is sliding window approach with O(N) time complexity
 func sliding_window_approach(myArray []int, k int) {
-	// 1, 2, 3, 4, 5 (3)
 	myAverageArray := make([]float32, 0)
 	windowStart := 0
 	windowSum := 0
